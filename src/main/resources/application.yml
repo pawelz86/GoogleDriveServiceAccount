@@ -1,0 +1,21 @@
+spring:
+  profiles:
+    active: @spring.profiles.active@
+  output.ansi.enabled: ALWAYS
+  server.sessiontimeout: 1000
+  http:
+    multipart:
+        enabled: true
+        max-file-size: -1
+drive:
+  email-address: 254209994446-efpiid2resf72di79s1rdjeq4hd92sfp@developer.gserviceaccount.com
+  app-name: serviceApp
+  root-folder: 0B0TLuEitXixNfi11Z2VCUkhBRUllcWVMdm1JM3BvSHdDd3EyMm5fdVdyWWFjT2JEeHdGTDQ
+  fields-to-get: id,webContentLink,name,webViewLink,parents,permissions
+  
+---
+spring:
+  profiles: dev
+drive:
+  p12-path: ../ruid_pliki/RUiD-c72e47f24ac7.p12
+  app-folder: 0B6EtM7f1LICBU0dWT1E3aFBBc1E
